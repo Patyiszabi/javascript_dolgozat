@@ -13,8 +13,8 @@ console.log("\n3.feladat\nA dobókocka ezt a számot dobta:" + dobokocka);
 
 let intervallum1, intervallum2;
 do {
-    intervallum1 = prompt("\nKérek egy alsó intervallumot!");
-    intervallum2 = prompt("\nKérek egy felső intervallumot!");
+    intervallum1 = prompt("Kérek egy alsó intervallumot!");
+    intervallum2 = prompt("Kérek egy felső intervallumot!");
     intervallum1 = parseInt(intervallum1);
     intervallum2 = parseInt(intervallum2);
 } while (isNaN(intervallum1) || isNaN(intervallum2));
@@ -24,7 +24,7 @@ console.log("\n4.feladat\nA szám a két intervallum között: " + szam);
 
 let inputeletkor;
 do {
-    inputeletkor = prompt("\nKérem az életkorát!");
+    inputeletkor = prompt("Kérem az életkorát!");
     inputeletkor = parseInt(inputeletkor);
 } while (isNaN(inputeletkor));
 
