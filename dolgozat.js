@@ -28,15 +28,23 @@ do {
     inputeletkor = parseInt(inputeletkor);
 } while (isNaN(inputeletkor));
 
-if (inputeletkor >= 0 && inputeletkor <= 6) {
-    console.log("\n5.feladat\nAz adott életkor: gyerek");
-}
-if (inputeletkor >= 7 && inputeletkor < 18) {
-    console.log("\n5.feladat\nAz adott életkor: iskolás");
-}
-if (inputeletkor >= 19 && inputeletkor < 60) {
-    console.log("\n5.feladat\nAz adott életkor: dolgozó");
-}
-if (inputeletkor >= 60) {
-    console.log("\n5.feladat\nAz adott életkor: nyugdíjas");
+switch (true) {
+    case (inputeletkor >= 0 && inputeletkor <= 6):
+        console.log("\n5.feladat\nAz adott életkor: gyerek");
+        break;
+
+    case (inputeletkor >= 7 && inputeletkor < 18):
+        console.log("\n5.feladat\nAz adott életkor: iskolás");
+        break;
+
+    case (inputeletkor >= 19 && inputeletkor < 60):
+        console.log("\n5.feladat\nAz adott életkor: dolgozó");
+        break;
+
+    case (inputeletkor >= 60):
+        console.log("\n5.feladat\nAz adott életkor: nyugdíjas");
+        break;
+
+    default:
+        console.log("\n5.feladat\nAz adott életkor érvénytelen");
 }
