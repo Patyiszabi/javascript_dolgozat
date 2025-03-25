@@ -48,3 +48,26 @@ switch (true) {
     default:
         console.log("\n5.feladat\nAz adott életkor érvénytelen");
 }
+
+let inputSzam;
+do {
+    inputSzam = prompt("Kérem egy számot!");
+    inputSzam = parseInt(inputSzam);
+} while (isNaN(inputSzam));
+
+switch (true) {
+    case (inputSzam > 0):
+        console.log("\n6.feladat\nA szám pozitív");
+        break;
+
+    case (inputSzam < 0):
+        console.log("\n6.feladat\nA szám negatív");
+        break;
+
+    case (inputSzam == 0):
+        console.log("\n6.feladat\nA szám 0");
+        break;
+
+    default:
+        console.log("\n6.feladat\nAz szám érvénytelen");
+}
